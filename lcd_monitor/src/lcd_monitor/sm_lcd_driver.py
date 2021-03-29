@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 from lcd_monitor import I2C_LCD_driver
 import datetime

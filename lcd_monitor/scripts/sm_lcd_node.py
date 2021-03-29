@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 from lcd_monitor.sm_lcd_driver import main
 
