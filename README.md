@@ -3,12 +3,12 @@
 _____________________________
 ##  NOETIC version
 
-Version for UBUNTU 20.4 and ROS NOETIC, both of them LTS version, with support until 2025.
+Version for UBUNTU 20.4 and ROS NOETIC, both of them LTS version, **with support until 2025**.
 Furthermore, NOETIC uses python 3 by default, once python 2.7 is deprecated.
 
-It is 100% functional, resulting faster and with long term support, also it will make much easer migrate to ROS 2 (ros-bridge), if it is the choice.
+It is **100% functional**, resulting faster and with long term support, also it will make much easer migrate to ROS 2 (ros-bridge), if it is the choice.
 
-UBUNTU 20.4 64 bits (desktop / raspberry pi)
+**UBUNTU 20.4 64 bits (desktop / raspberry pi)**
 
 ### INSTALL ROS NOETIC UBUNTU 20.4
 http://wiki.ros.org/noetic/Installation/Ubuntu
