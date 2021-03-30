@@ -154,7 +154,7 @@ class SpotMicroServoControl():
         self.settings = termios.tcgetattr(sys.stdin)
 
     def send_servo_msg(self):
-        for servo_key, servo_obj in self.servos.iteritems():
+        for servo_key, servo_obj in self.servos.tems():
             self._servo_msg.servos[servo_obj.id].servo = servo_obj.id+1
             self._servo_msg.servos[servo_obj.id].value = servo_obj.value
             #rospy.loginfo("Sending to %s command %d"%(servo_key, servo_obj.value))
