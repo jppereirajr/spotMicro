@@ -10,7 +10,7 @@ It is **100% functional**, resulting faster and with long term support, also it 
 
 **UBUNTU 20.4 64 bits (desktop / raspberry pi)**
 
-### INSTALL ROS NOETIC UBUNTU 20.4
+### INSTALL ROS NOETIC UBUNTU 20.4 64 bits
 http://wiki.ros.org/noetic/Installation/Ubuntu
 
 **NOTE**  use ros-noetic-desktop option
