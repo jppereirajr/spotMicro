@@ -37,6 +37,12 @@ pip3 install osrf-pycommon
 ###### ROS RPLIDAR
 http://wiki.ros.org/rplidar
 
+##### ADD ubuntu user to i2c group 
+```
+sudo usermod -a -G i2c ubuntu
+logout
+```
+
 
 ## Future Work
 
