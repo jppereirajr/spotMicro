@@ -31,12 +31,61 @@ sudo apt install ros-noetic-joy
 sudo apt install ros-noetic-hector-slam
 
 ```
+### VERSION CHECKOUT AND SETUP
+
+Note that this repo utilizes two git submodules, which require additional steps to check out. After checking out the main repo, checkout the submodules via:
+
+```
+git submodule update --init --recursive
+git submodule update --recursive
+```
+
+#### ROSI2C
+
+##### Some change before compile 
+
+Add i2c into line 22 of src/ros-i2cpwmboard/CMakeLists.txt, so that it looks like:
+```
+target_link_libraries(i2cpwm_board ${catkin_LIBRARIES} i2c)
+```
+
+And add the code below to src/ros-i2cpwmboard/src/i2cpwm_controller.cpp:
+```
+extern "C" {
+	#include <i2c/smbus.h>
+}
+```
+
 
 ##### ADD ubuntu user to i2c group 
 ```
 sudo usermod -a -G i2c ubuntu
 logout
 ```
+###### Test i2c access 
+
+run `i2cdetect -y 1` as ubuntu user
+
+Expected output below
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+70: 70 -- -- -- -- -- -- --   
+```
+
+### READY TO COMPILE
+
+https://github.com/mike4192/spotMicro
+
+
+
 
 
 ## Future Work
