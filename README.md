@@ -23,11 +23,9 @@ sudo apt install ros-noetic-desktop
 
 ##### Additional packages
 ```
-sudo apt install catkin
 sudo apt install python3-catkin python3-catkin-pkg python3-catkin-pkg-modules python3-catkin-tools
-sudo apt install ros-noetic-desktop
-sudo apt install qtbase5-dev
 sudo apt install libi2c-dev i2c-tools python3-smbus python3-rpi.gpio
+sudo apt install qtbase5-dev
 sudo apt install ros-noetic-tf2-eigen 
 sudo apt install ros-noetic-joy
 sudo apt install ros-noetic-hector-slam
