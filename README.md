@@ -15,9 +15,9 @@ It is **100% functional**, resulting faster and with long term support, also it 
 ### INSTALL ROS NOETIC UBUNTU 20.4 64 bits
 http://wiki.ros.org/noetic/Installation/Ubuntu
 
-**NOTE**  use ros-noetic-desktop option
+**NOTE**  use ros-noetic-base option
 ```
-sudo apt install ros-noetic-desktop
+sudo apt install ros-noetic-base
 ```
 
 
@@ -26,16 +26,11 @@ sudo apt install ros-noetic-desktop
 sudo apt install python3-catkin python3-catkin-pkg python3-catkin-pkg-modules python3-catkin-tools
 sudo apt install libi2c-dev i2c-tools python3-smbus python3-rpi.gpio
 sudo apt install qtbase5-dev
-sudo apt install ros-noetic-tf2-eigen 
+sudo apt install ros-noetic-tf2-eigen ros-noetic-tf2-ros
 sudo apt install ros-noetic-joy
 sudo apt install ros-noetic-hector-slam
 
-pip3 install osrf-pycommon
 ```
-##### Additional packages from source
-
-###### ROS RPLIDAR
-http://wiki.ros.org/rplidar
 
 ##### ADD ubuntu user to i2c group 
 ```
