@@ -17,7 +17,8 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 **NOTE**  use ros-noetic-base option
 ```
-sudo apt install ros-noetic-base
+sudo apt install ros-noetic-ros-base
+
 ```
 
 
